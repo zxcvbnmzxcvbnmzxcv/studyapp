@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>u chose to do this</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+  </head>
 
+
+
+
+
+
+  <body>
+
+
+
+
+
+
+
+
+    <div class="app">
+      <h1>Study App</h1>
+
+      <div class="layout">
+        <section class="card">
+          <div class="video-wrap">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="output_canvas"></canvas>
+          </div>
+          <div class="rep-box">Curls: <span style="font-size:20px"id="rep-counter">0</span></div>
+          <p id="arm-stage">Arm: Down</p>
+        </section>
+
+        <section class="card">
+          <div class="status" id="speech-status">Ready</div>
+          <div class="question" id="question-display">Press start to begin.</div>
+          <div class="answer" id="answer-display"></div>
+
+          <div class="buttons">
+            <button id="start-study-btn" type="button">Start</button>
+            <button id="listen-btn" type="button" disabled>Listen</button>
+            <button id="next-question-btn" type="button">Next</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
